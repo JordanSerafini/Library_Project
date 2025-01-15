@@ -13,14 +13,15 @@ const App: React.FC = () => {
 
   return (
     <div className="w-screen h-screen bg-gray-900 flex justify-center items-center">
+      <p className="text-white">test</p>
       <InfiniteScroller
         items={items}
-        speed={80}                // px/s
-        gap={30}                  // spacing in px
-        direction="left"          // or 'right'
-        pauseOnHover={true}       // pauses on hover
-        className="h-20 bg-gray-200"
-        itemClassName="px-2"      // extra styling for each item
+        speed={90}                // Vitesse en px/s
+        gap={20}                  // Espace entre les items
+        direction="right"         // Direction : 'left' ou 'right'
+        pauseOnHover={true}       // Pause au survol
+        className="h-20 bg-gray-200 w-full flex space-evenly"
+        itemClassName="px-2 "      // Style individuel des items
       />
     </div>
   );
